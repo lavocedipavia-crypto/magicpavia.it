@@ -2,57 +2,107 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MagicPavia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MagicPavia - News, Eventi e Sport</title>
+
 <style>
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
-background:#f5f5f5;
+padding:0;
+box-sizing:border-box;
 }
+
+body{
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+color:#333;
+}
+
 header{
-background:#0057b8;
+background:linear-gradient(135deg,#0056b3,#0084ff);
 color:white;
-padding:30px;
+padding:60px 20px;
 text-align:center;
 }
+
+header h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
 nav{
 background:#003d80;
 padding:15px;
 text-align:center;
 }
+
 nav a{
 color:white;
 text-decoration:none;
 margin:0 15px;
 font-weight:bold;
 }
-section{
+
+.hero{
+max-width:1200px;
+margin:30px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.grid{
 max-width:1200px;
 margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 padding:20px;
 }
+
 .card{
 background:white;
-padding:20px;
-margin:20px 0;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
+
+.card h2{
+color:#0056b3;
+margin-bottom:15px;
+}
+
+.facebook{
+text-align:center;
+padding:40px;
+}
+
+.facebook a{
+display:inline-block;
+background:#1877f2;
+color:white;
+padding:15px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
 footer{
 background:#222;
 color:white;
 text-align:center;
-padding:20px;
-margin-top:30px;
+padding:30px;
+margin-top:40px;
 }
 </style>
+
 </head>
 <body>
 
 <header>
 <h1>MagicPavia</h1>
-<p>Eventi, News e Sport a Pavia</p>
+<p>News, Eventi, Sport e Vita del Territorio Pavese</p>
 </header>
 
 <nav>
@@ -60,35 +110,49 @@ margin-top:30px;
 <a href="#">News</a>
 <a href="#">Eventi</a>
 <a href="#">Sport</a>
-<a href="https://facebook.com">Facebook</a>
+<a href="#">Contatti</a>
 </nav>
 
-<section>
-
-<div class="card">
+<div class="hero">
 <h2>Benvenuti su MagicPavia</h2>
-<p>Il portale dedicato agli eventi, alle notizie e allo sport del territorio pavese.</p>
+<p>
+Il nuovo portale dedicato alla città di Pavia e alla sua provincia.
+Approfondimenti, eventi, sport, cultura e notizie del territorio.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>📰 Ultime News</h2>
+<p>Approfondimenti e notizie locali aggiornate.</p>
 </div>
 
 <div class="card">
-<h2>Ultime News</h2>
-<p>Qui pubblicherai le tue notizie e approfondimenti.</p>
+<h2>🎉 Eventi a Pavia</h2>
+<p>Concerti, sagre, mostre e appuntamenti del weekend.</p>
 </div>
 
 <div class="card">
-<h2>Eventi a Pavia</h2>
-<p>Calendario aggiornato degli eventi locali.</p>
+<h2>⚽ Sport Pavese</h2>
+<p>Calcio, basket, ciclismo e sport del territorio.</p>
 </div>
 
 <div class="card">
-<h2>Sport Pavese</h2>
-<p>Risultati, interviste e approfondimenti sportivi.</p>
+<h2>🏛 Cultura e Territorio</h2>
+<p>Storie, curiosità e luoghi da scoprire.</p>
 </div>
 
-</section>
+</div>
+
+<div class="facebook">
+<a href="https://www.facebook.com/profile.php?id=61579944144457" target="_blank">
+Segui MagicPavia su Facebook
+</a>
+</div>
 
 <footer>
-© 2026 MagicPavia.it
+© 2026 MagicPavia.it - Tutti i diritti riservati
 </footer>
 
 </body>
